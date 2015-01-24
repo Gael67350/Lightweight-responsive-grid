@@ -1,0 +1,120 @@
+/* The MIT License (MIT) Copyright (c) 2015 SosIT.fr */
+/* _grid.scss */
+
+/**
+ * Imports
+**/
+
+@import "compass";
+
+/**
+ * Basics
+**/
+
+* { @include box-sizing(border-box); }
+
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+}
+
+/**
+ * Variables
+**/
+
+	$grid_columns-nbr: 12 !default;
+	$grid_gutter: percentage(20px/940px) !default;
+
+	$grid_breakpoint-s: 768px !default;
+	$grid_breakpoint-m: 992px !default;
+	$grid_breakpoint-w: 1200px !default;
+
+/**
+ * Mixins
+**/
+
+@mixin columns($suffix: '') {
+	@for $i from 1 through $grid_columns-nbr {
+		.col#{$suffix}-#{$i} { 
+			width: (($i/$grid_columns-nbr)*100%)-$grid_gutter; 
+			margin: 0 $grid_gutter*0.5 0 $grid_gutter*0.5;
+			&:first-child { margin: 0 $grid_gutter*0.5 0 0; }
+		}
+	}
+}
+
+/**
+ * Class
+**/
+
+%col {
+	background-color: #85A5A6; 	// |
+	border-color: black;		// |
+	border-radius: 2px;			// |- > Design only for the demo
+	border-style: solid;		// |
+	border-width: 1px;			// |
+						
+	float: left;
+	min-height: 1px;
+	position: relative;
+}
+
+.row {
+	margin-right: $grid_gutter*-1;
+	:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+
+	:after {
+		clear: both;
+	}
+}
+
+/**
+ * Core
+**/
+
+@for $i from 1 through $grid_columns-nbr {
+	.col-#{$i}, .col-s-#{$i}, .col-m-#{$i}, .col-w-#{$i} { @extend %col; }
+}
+
+@include columns();
+
+.col-#{$grid_columns_nbr} { margin: 0; }
+.container {		
+	max-width: 100%;
+}
+
+/**
+ * Media Queries
+**/
+
+	//Extra small devices
+	//No media query because this is a mobile-first grid
+
+	//Small devices (Tablets, Phones, etc ....)
+	@media only screen and (min-width: $grid_breakpoint-s) {
+		@include columns('-s');
+	}
+
+	//Medium devices (Desktops)
+	@media only screen and (min-width: $grid_breakpoint-m) {
+		@include columns('-m');
+		.container {
+			max-width: 970px;
+		}
+	}
+
+	//Wide devices (Desktops)
+	@media only screen and (min-width: $grid_breakpoint-w) {
+		@include columns('-w');
+		.container {
+			max-width: 1170px;
+		}
+	}

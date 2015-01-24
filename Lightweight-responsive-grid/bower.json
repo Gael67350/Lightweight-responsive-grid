@@ -1,0 +1,21 @@
+{
+  "name": "Grid",
+  "version": "0.0.1",
+  "homepage": "http://www.sosit.fr",
+  "authors": [
+    "SCION Gael <gael67350@gmail.com>"
+  ],
+  "description": "Private flexible grid system for SosIT Projects",
+  "main": "sass/main.scss",
+  "keywords": [
+    "sass",
+    "css",
+    "grid"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+  ]
+}

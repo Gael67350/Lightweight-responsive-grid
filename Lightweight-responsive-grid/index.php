@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="fr">
+
+		<meta charset="UTF-8">
+		<title>Lightweight responsive grid</title>
+		<link rel="stylesheet" href="css/main.css">
+
+	</head>
+
+	<body>
+		
+		<div class="container">
+			<h1>Lightweight responsive grid</h1>
+			<div class="row">
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+				<div class="col-1">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-10 col-s-2">Col</div>
+				<div class="col-2 col-s-10">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-9 col-s-3">Col</div>
+				<div class="col-3 col-s-9">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-8 col-s-4">Col</div>
+				<div class="col-4 col-s-8">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-7 col-s-5">Col</div>
+				<div class="col-5 col-s-7">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-6 col-s-6">Col</div>
+				<div class="col-6 col-s-6">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-5 col-s-7">Col</div>
+				<div class="col-7 col-s-5">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-4 col-s-8">Col</div>
+				<div class="col-8 col-s-4">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-3 col-s-9">Col</div>
+				<div class="col-9 col-s-3">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-2 col-s-10">Col</div>
+				<div class="col-10 col-s-2">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-1 col-s-11">Col</div>
+				<div class="col-11 col-s-1">Col</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-s-12">Col</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>
