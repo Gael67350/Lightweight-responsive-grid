@@ -81,12 +81,23 @@ body {
 **/
 
 @for $i from 1 through $grid_columns-nbr {
-	.col-#{$i}, .col-s-#{$i}, .col-m-#{$i}, .col-w-#{$i} { @extend %col; }
+	.col-#{$i}, .col-s-#{$i}, .col-m-#{$i}, .col-w-#{$i}, .col-hidden, .col-s-hidden, .col-m-hidden, .col-w-hidden, .col-show, .col-s-show, .col-m-show, .col-w-show { @extend %col; }
 }
 
 @include columns();
 
 .col-#{$grid_columns_nbr} { margin: 0; }
+
+.col-hidden { visibility: hidden; }
+.col-s-hidden { visibility: visible; }
+.col-m-hidden { visibility: visible; }
+.col-w-hidden { visibility: visible; }
+
+.col-show { visibility: visible; }
+.col-s-show { visibility: hidden; }
+.col-m-show { visibility: hidden; }
+.col-w-show { visibility: hidden; }
+
 .container {		
 	max-width: 100%;
 }
@@ -101,11 +112,22 @@ body {
 	//Small devices (Tablets, Phones, etc ....)
 	@media only screen and (min-width: $grid_breakpoint-s) {
 		@include columns('-s');
+		.col-hidden { visibility: visible; }
+		.col-s-hidden { visibility: hidden; }
+
+		.col-show { visibility: hidden;}
+		.col-s-show { visibility: visible; }
 	}
 
 	//Medium devices (Desktops)
 	@media only screen and (min-width: $grid_breakpoint-m) {
 		@include columns('-m');
+		.col-s-hidden { visibility: visible; }
+		.col-m-hidden { visibility: hidden; }
+
+		.col-s-show { visibility: hidden; }
+		.col-m-show { visibility: visible; }
+
 		.container {
 			max-width: 970px;
 		}
@@ -114,6 +136,12 @@ body {
 	//Wide devices (Desktops)
 	@media only screen and (min-width: $grid_breakpoint-w) {
 		@include columns('-w');
+		.col-m-hidden { visibility: visible; }
+		.col-w-hidden { visibility: hidden; }
+
+		.col-m-show { visibility: hidden; }
+		.col-w-show { visibility: visible; }
+
 		.container {
 			max-width: 1170px;
 		}
