@@ -81,22 +81,31 @@ body {
 **/
 
 @for $i from 1 through $grid_columns-nbr {
-	.col-#{$i}, .col-s-#{$i}, .col-m-#{$i}, .col-w-#{$i}, .col-hidden, .col-s-hidden, .col-m-hidden, .col-w-hidden, .col-show, .col-s-show, .col-m-show, .col-w-show { @extend %col; }
+	.col-#{$i}, .col-s-#{$i}, .col-m-#{$i} { @extend %col; }
 }
 
 @include columns();
 
+.hide, .s-hide, .m-hide, .w-hide, 
+.show, .s-show, .m-show, .w-show, 
+.delete, .s-delete, .m-delete, .w-delete { @extend %col; }
+
 .col-#{$grid_columns_nbr} { margin: 0; }
 
-.col-hidden { visibility: hidden; }
-.col-s-hidden { visibility: visible; }
-.col-m-hidden { visibility: visible; }
-.col-w-hidden { visibility: visible; }
+.hide { visibility: hidden; }
+.s-hide { visibility: visible; }
+.m-hide { visibility: visible; }
+.w-hide { visibility: visible; }
 
-.col-show { visibility: visible; }
-.col-s-show { visibility: hidden; }
-.col-m-show { visibility: hidden; }
-.col-w-show { visibility: hidden; }
+.show { visibility: visible; }
+.s-show { visibility: hidden; }
+.m-show { visibility: hidden; }
+.w-show { visibility: hidden; }
+
+.delete { display: none; }
+.s-delete { display: block; }
+.m-delete { display: block; }
+.w-delete { display: block; }
 
 .container {		
 	max-width: 100%;
@@ -112,21 +121,27 @@ body {
 	//Small devices (Tablets, Phones, etc ....)
 	@media only screen and (min-width: $grid_breakpoint-s) {
 		@include columns('-s');
-		.col-hidden { visibility: visible; }
-		.col-s-hidden { visibility: hidden; }
+		.hide { visibility: visible; }
+		.s-hide { visibility: hidden; }
 
-		.col-show { visibility: hidden;}
-		.col-s-show { visibility: visible; }
+		.show { visibility: hidden;}
+		.s-show { visibility: visible; }
+
+		.delete { display: block; }
+		.s-delete { display: none; }
 	}
 
 	//Medium devices (Desktops)
 	@media only screen and (min-width: $grid_breakpoint-m) {
 		@include columns('-m');
-		.col-s-hidden { visibility: visible; }
-		.col-m-hidden { visibility: hidden; }
+		.s-hide { visibility: visible; }
+		.m-hide { visibility: hidden; }
 
-		.col-s-show { visibility: hidden; }
-		.col-m-show { visibility: visible; }
+		.s-show { visibility: hidden; }
+		.m-show { visibility: visible; }
+
+		.s-delete { display: block; }
+		.m-delete { display: none; }
 
 		.container {
 			max-width: 970px;
@@ -136,11 +151,14 @@ body {
 	//Wide devices (Desktops)
 	@media only screen and (min-width: $grid_breakpoint-w) {
 		@include columns('-w');
-		.col-m-hidden { visibility: visible; }
-		.col-w-hidden { visibility: hidden; }
+		.m-hide { visibility: visible; }
+		.w-hide { visibility: hidden; }
 
-		.col-m-show { visibility: hidden; }
-		.col-w-show { visibility: visible; }
+		.m-show { visibility: hidden; }
+		.w-show { visibility: visible; }
+
+		.m-delete { display: block; }
+		.w-delete { display: none; }
 
 		.container {
 			max-width: 1170px;
