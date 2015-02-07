@@ -22,6 +22,7 @@ body {
 /* line 21, ../sass/grid.scss */
 .container {
   margin: 0 auto;
+  height: 100%;
 }
 
 /**
@@ -33,7 +34,7 @@ body {
 /**
  * Class
 **/
-/* line 54, ../sass/grid.scss */
+/* line 56, ../sass/grid.scss */
 .col-1, .col-s-1, .col-m-1, .col-2, .col-s-2, .col-m-2, .col-3, .col-s-3, .col-m-3, .col-4, .col-s-4, .col-m-4, .col-5, .col-s-5, .col-m-5, .col-6, .col-s-6, .col-m-6, .col-7, .col-s-7, .col-m-7, .col-8, .col-s-8, .col-m-8, .col-9, .col-s-9, .col-m-9, .col-10, .col-s-10, .col-m-10, .col-11, .col-s-11, .col-m-11, .col-12, .col-s-12, .col-m-12, .hide, .s-hide, .m-hide, .w-hide,
 .show, .s-show, .m-show, .w-show,
 .delete, .s-delete, .m-delete, .w-delete {
@@ -47,209 +48,211 @@ body {
   position: relative;
 }
 
-/* line 66, ../sass/grid.scss */
+/* line 68, ../sass/grid.scss */
 .row {
   margin-right: -2.12766%;
 }
-/* line 69, ../sass/grid.scss */
+/* line 71, ../sass/grid.scss */
 .row :before, .row:after {
   content: "";
   display: table;
-}
-/* line 74, ../sass/grid.scss */
-.row :after {
   clear: both;
+}
+
+/* line 78, ../sass/grid.scss */
+.spacer {
+  height: 3em;
 }
 
 /**
  * Core
 **/
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-1 {
   width: 6.20567%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-1:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-2 {
   width: 14.53901%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-2:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-3 {
   width: 22.87234%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-3:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-4 {
   width: 31.20567%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-4:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-5 {
   width: 39.53901%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-5:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-6 {
   width: 47.87234%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-6:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-7 {
   width: 56.20567%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-7:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-8 {
   width: 64.53901%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-8:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-9 {
   width: 72.87234%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-9:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-10 {
   width: 81.20567%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-10:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-11 {
   width: 89.53901%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-11:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 42, ../sass/grid.scss */
+/* line 44, ../sass/grid.scss */
 .col-12 {
   width: 97.87234%;
   margin: 0 1.06383% 0 1.06383%;
 }
-/* line 45, ../sass/grid.scss */
+/* line 47, ../sass/grid.scss */
 .col-12:first-child {
   margin: 0 1.06383% 0 0;
 }
 
-/* line 93, ../sass/grid.scss */
+/* line 96, ../sass/grid.scss */
 .col-12 {
   margin: 0;
 }
 
-/* line 95, ../sass/grid.scss */
+/* line 98, ../sass/grid.scss */
 .hide {
   visibility: hidden;
 }
 
-/* line 96, ../sass/grid.scss */
+/* line 99, ../sass/grid.scss */
 .s-hide {
   visibility: visible;
 }
 
-/* line 97, ../sass/grid.scss */
+/* line 100, ../sass/grid.scss */
 .m-hide {
   visibility: visible;
 }
 
-/* line 98, ../sass/grid.scss */
+/* line 101, ../sass/grid.scss */
 .w-hide {
   visibility: visible;
 }
 
-/* line 100, ../sass/grid.scss */
+/* line 103, ../sass/grid.scss */
 .show {
   visibility: visible;
 }
 
-/* line 101, ../sass/grid.scss */
+/* line 104, ../sass/grid.scss */
 .s-show {
   visibility: hidden;
 }
 
-/* line 102, ../sass/grid.scss */
+/* line 105, ../sass/grid.scss */
 .m-show {
   visibility: hidden;
 }
 
-/* line 103, ../sass/grid.scss */
+/* line 106, ../sass/grid.scss */
 .w-show {
   visibility: hidden;
 }
 
-/* line 105, ../sass/grid.scss */
+/* line 108, ../sass/grid.scss */
 .delete {
   display: none;
 }
 
-/* line 106, ../sass/grid.scss */
+/* line 109, ../sass/grid.scss */
 .s-delete {
   display: block;
 }
 
-/* line 107, ../sass/grid.scss */
+/* line 110, ../sass/grid.scss */
 .m-delete {
   display: block;
 }
 
-/* line 108, ../sass/grid.scss */
+/* line 111, ../sass/grid.scss */
 .w-delete {
   display: block;
 }
 
-/* line 110, ../sass/grid.scss */
+/* line 113, ../sass/grid.scss */
 .container {
   max-width: 100%;
 }
@@ -258,464 +261,464 @@ body {
  * Media Queries
 **/
 @media only screen and (min-width: 768px) {
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-1 {
     width: 6.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-1:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-2 {
     width: 14.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-2:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-3 {
     width: 22.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-3:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-4 {
     width: 31.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-4:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-5 {
     width: 39.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-5:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-6 {
     width: 47.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-6:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-7 {
     width: 56.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-7:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-8 {
     width: 64.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-8:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-9 {
     width: 72.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-9:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-10 {
     width: 81.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-10:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-11 {
     width: 89.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-11:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-s-12 {
     width: 97.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-s-12:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 124, ../sass/grid.scss */
+  /* line 127, ../sass/grid.scss */
   .hide {
     visibility: visible;
   }
 
-  /* line 125, ../sass/grid.scss */
+  /* line 128, ../sass/grid.scss */
   .s-hide {
     visibility: hidden;
   }
 
-  /* line 127, ../sass/grid.scss */
+  /* line 130, ../sass/grid.scss */
   .show {
     visibility: hidden;
   }
 
-  /* line 128, ../sass/grid.scss */
+  /* line 131, ../sass/grid.scss */
   .s-show {
     visibility: visible;
   }
 
-  /* line 130, ../sass/grid.scss */
+  /* line 133, ../sass/grid.scss */
   .delete {
     display: block;
   }
 
-  /* line 131, ../sass/grid.scss */
+  /* line 134, ../sass/grid.scss */
   .s-delete {
     display: none;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-1 {
     width: 6.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-1:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-2 {
     width: 14.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-2:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-3 {
     width: 22.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-3:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-4 {
     width: 31.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-4:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-5 {
     width: 39.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-5:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-6 {
     width: 47.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-6:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-7 {
     width: 56.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-7:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-8 {
     width: 64.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-8:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-9 {
     width: 72.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-9:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-10 {
     width: 81.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-10:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-11 {
     width: 89.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-11:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-m-12 {
     width: 97.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-m-12:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 137, ../sass/grid.scss */
+  /* line 140, ../sass/grid.scss */
   .s-hide {
     visibility: visible;
   }
 
-  /* line 138, ../sass/grid.scss */
+  /* line 141, ../sass/grid.scss */
   .m-hide {
     visibility: hidden;
   }
 
-  /* line 140, ../sass/grid.scss */
+  /* line 143, ../sass/grid.scss */
   .s-show {
     visibility: hidden;
   }
 
-  /* line 141, ../sass/grid.scss */
+  /* line 144, ../sass/grid.scss */
   .m-show {
     visibility: visible;
   }
 
-  /* line 143, ../sass/grid.scss */
+  /* line 146, ../sass/grid.scss */
   .s-delete {
     display: block;
   }
 
-  /* line 144, ../sass/grid.scss */
+  /* line 147, ../sass/grid.scss */
   .m-delete {
     display: none;
   }
 
-  /* line 146, ../sass/grid.scss */
+  /* line 149, ../sass/grid.scss */
   .container {
     max-width: 970px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-1 {
     width: 6.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-1:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-2 {
     width: 14.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-2:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-3 {
     width: 22.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-3:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-4 {
     width: 31.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-4:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-5 {
     width: 39.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-5:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-6 {
     width: 47.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-6:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-7 {
     width: 56.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-7:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-8 {
     width: 64.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-8:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-9 {
     width: 72.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-9:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-10 {
     width: 81.20567%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-10:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-11 {
     width: 89.53901%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-11:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 42, ../sass/grid.scss */
+  /* line 44, ../sass/grid.scss */
   .col-w-12 {
     width: 97.87234%;
     margin: 0 1.06383% 0 1.06383%;
   }
-  /* line 45, ../sass/grid.scss */
+  /* line 47, ../sass/grid.scss */
   .col-w-12:first-child {
     margin: 0 1.06383% 0 0;
   }
 
-  /* line 154, ../sass/grid.scss */
+  /* line 157, ../sass/grid.scss */
   .m-hide {
     visibility: visible;
   }
 
-  /* line 155, ../sass/grid.scss */
+  /* line 158, ../sass/grid.scss */
   .w-hide {
     visibility: hidden;
   }
 
-  /* line 157, ../sass/grid.scss */
+  /* line 160, ../sass/grid.scss */
   .m-show {
     visibility: hidden;
   }
 
-  /* line 158, ../sass/grid.scss */
+  /* line 161, ../sass/grid.scss */
   .w-show {
     visibility: visible;
   }
 
-  /* line 160, ../sass/grid.scss */
+  /* line 163, ../sass/grid.scss */
   .m-delete {
     display: block;
   }
 
-  /* line 161, ../sass/grid.scss */
+  /* line 164, ../sass/grid.scss */
   .w-delete {
     display: none;
   }
 
-  /* line 163, ../sass/grid.scss */
+  /* line 166, ../sass/grid.scss */
   .container {
     max-width: 1170px;
   }

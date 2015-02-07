@@ -20,6 +20,7 @@ body {
 
 .container {
 	margin: 0 auto;
+	height: 100%;
 }
 
 /**
@@ -28,6 +29,7 @@ body {
 
 	$grid_columns-nbr: 12 !default;
 	$grid_gutter: percentage(20px/940px) !default;
+	$grid_spacer: 3em !default;
 
 	$grid_breakpoint-s: 768px !default;
 	$grid_breakpoint-m: 992px !default;
@@ -69,11 +71,12 @@ body {
 	&:after {
 		content: "";
 		display: table;
-	}
-
-	:after {
 		clear: both;
 	}
+}
+
+.spacer {
+	height: $grid_spacer;
 }
 
 /**
