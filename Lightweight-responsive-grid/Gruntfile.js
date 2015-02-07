@@ -41,11 +41,27 @@ module.exports  =   function(grunt) {
                 push: true,
                 pushTo: 'origin'
             }
+        },
+        cssmin: {
+            target: {
+                files: [{
+                    expand: true,
+                    cwd: 'css',
+                    src: ['*.css', '!*.min.css'],
+                    dest: 'css',
+                    ext: '.min.css'
+                }],
+                options: {
+                    shorthandCompacting: false,
+                    roundingPrecision: -1
+                }
+            }
         }
     });
     //grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-compass');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-bump');
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('build', ['sass']);

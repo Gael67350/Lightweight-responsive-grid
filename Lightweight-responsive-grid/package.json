@@ -1,11 +1,12 @@
 {
-  "name": "Lightweight reponsive grid",
+  "name": "Lightweight-reponsive-grid",
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-sass": "^0.8.1",
     "grunt-contrib-compass": "^1.0.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-bump": "0.0.14"
+    "grunt-bump": "0.0.14",
+    "grunt-contrib-cssmin": "^0.11.0"
   },
   "version": "0.1.0",
   "description": "Responsive and mobile first grid system",
